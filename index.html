@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+
+    <style>
+        /* Basic Styling - Customize as needed */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #35424a url(https://e1.pxfuel.com/desktop-wallpaper/239/299/desktop-wallpaper-best-5-data-science-backgrounds-on-hip-data-structure.jpg);
+            background-size: cover;
+            color: #fff;
+            padding-top: 30px 0;
+            min-height: 100px;
+            border-bottom: #2980b9 3px solid;
+        }
+        
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        header ul li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        header .highlight, header a:hover {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* About Me Section */
+        #about {
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Skills, Education, etc. Sections */
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-bottom: #35424a 3px solid;
+        }
+
+        .section-title {
+            border-bottom: #2980b9 2px solid;
+            color: #35424a;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul.skills {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul.skills li {
+            margin-bottom: 10px;
+        }
+
+        /* Projects Section */
+
+        #projects .project {
+            display: flex; 
+            margin-bottom: 30px; 
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #projects img { 
+            width: 300px;
+            object-fit: cover; 
+        }
+
+        #projects .project-info {
+            padding: 20px; 
+        }
+        /* Achievements and Certifications Sections */
+        #achievements .achievement{
+            float: left;
+            width: 30%;
+            padding: 10px;
+            margin: 1%;
+        } 
+        #certifications .certification{
+            float: left;
+            width: 30%;
+            padding: 10px;
+            margin: 1%;
+        }
+
+        /* Contact Section */
+        #contact .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contact .contact-item {
+            margin: 0 20px; 
+        }
+
+        #contact .contact-item i {
+            font-size: 24px;
+            margin-right: 10px; 
+            color: #2980b9; 
+        }
+
+        /* FOOTER STYLING */
+        footer {
+            background: #333; 
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Peheni Perera - Portfolio</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <img src="img/084A1083(1).png" style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto;"> 
+            <p>I am an undergraduate at General Sir John Kotelawala Defence University, 
+                pursuing a degree in Applied Data Science & Communication (BSc.) As a 
+                final-year undergraduate, I'm attempting to gain professional knowledge 
+                while maintaining a strong ethical perspective. I'm currently exploring 
+                the Microsoft Power Platform, using low-code tools to create smart, 
+                data-driven solutions. With a strong interest in AI and predictive analytics, 
+                I'm excited to apply my skills to real-world problems and make an impact.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <ul class="skills">
+                <li>Technical Skills
+                    <ul>
+                        <li>Python (NumPy, Pandas, Scikit-learn, TensorFlow/Keras, etc.)</li>
+                        <li>R (Tidyverse, etc.)</li>
+                        <li>SQL</li>
+                        <li>Data Visualization (Matplotlib, Seaborn, Tableau, Power BI, etc.)</li>
+                        <li>Machine Learning Algorithms</li>
+                        <!-- Add more technical skills -->
+                    </ul>
+                </li>
+                <li>Soft Skills
+                    <ul>
+                        <li>Communication</li>
+                        <li>Problem-Solving</li>
+                        <li>Critical Thinking</li>
+                        <li>Teamwork</li>
+                        <!-- Add more soft skills -->
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <ul>
+                <li>
+                    <h3>Musaeus College</h3>
+                    <p>2008 - 2022</p>
+                </li>
+                <li>
+                    <h3>National Institue of Business Management</h3>
+                    <p>2022 - 2023</p>
+                </li>
+                <li>
+                    <h3>General Sir John Kothelawala Defence University</h3>
+                    <p>2023 - Present</p>
+                </li>
+                <!-- Add more education entries if needed -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="project">
+                <img src="img/project1.png" alt="Project 1">
+                <div class="project-info">
+                    <h3>Greater Manchester Property Price Monitor</h3>
+                    <p>This project presents a Power BI-based reporting solution for analyzing the Greater Manchester property market. 
+                        By leveraging the UK Price Paid Dataset (2019-2022), the dashboard allows users to explore property sales trends, 
+                        price distribution, and sales volumes across various property types. The data is imported from Microsoft SQL 
+                        Server, and SQL views are created for efficient querying and visualization.</p>
+                    <p>
+                        <a href="https://github.com/Peheni01/Greater-Manchester-Property-Price-Monitor" target="_blank">GitHub Repository</a> | 
+                        <a href="https://app.powerbi.com/groups/me/reports//ReportSection?experience=power-bi" target="_blank">Live Dashboard</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/project2.jpg" alt="Project 2">
+                <div class="project-info"> 
+                    <h3>London Metropolitan Police Crime Analysis</h3>
+                    <p>This project presents a Power BI-based reporting solution for analyzing crime trends in London Metropolitan 
+                        Police Areas. Using the UK MPS Monthly Crime Datasets (2015-2023), the dashboard provides insights into crime 
+                        distribution across 32 boroughs (excluding the City of London). The data is imported from Microsoft SQL Server, 
+                        with SQL views created for efficient querying and visualization.</p>
+                    <p>
+                        <a href="https://github.com/Peheni01/London-Metropolitan-Police-Crime-Analysis" target="_blank">GitHub Repository</a> |
+                        <a href="https://app.powerbi.com/groups/me/reports//ReportSection58ff47614caf94872ebb?experience=power-bi" target="_blank">Live Dashboard</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="img/online.webp" alt="Project 2">
+                <div class="project-info"> 
+                    <h3>Online-Shoppers-Purchasing-Intention-Analysis</h3>
+                    <p>This project focuses on analyzing the purchasing intentions of online shoppers using a dataset containing 12,
+                        330 records and 18 variables. The analysis employs both classification and clustering techniques to 
+                        understand shopper behavior and predict revenue generation. The K-Nearest Neighbors (KNN) algorithm is 
+                        utilized for classification, while K-means clustering is applied to identify distinct shopper segments. 
+                        The insights derived from this analysis can help online retailers optimize their marketing strategies and 
+                        improve revenue generation.</p>
+                    <p>
+                        <a href="https://github.com/Peheni01/Online-Shoppers-Purchasing-Intention-Analysis" target="_blank">GitHub Repository</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="container">
+            <h2 class="section-title">Competitions</h2>
+            <div class="achievement">
+                <img src="img/data odyssey.jpeg">
+                <h3>Data Odyssey - 2023</h3>
+                <p>Bin tech explorers, emerged as the winners at the Data Odyssey exhibition held in 2023</p>
+            </div>
+            <div class="achievement">
+                <img src="img/data odyssey2024.jpeg.jpg"><br><br><br><br><br>
+                <h3>Data Odyssey - 2024</h3>
+                <p>Team Big Bang participated to the Data Odyssey exhibition held in 2024</p>
+            </div>   
+        </div>    
+    </section>
+    
+    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certification">
+                <img src="img/nibm.jpeg">
+                <h3>Certificate in Computer Science</h3>
+            </div>
+            <div class="certification">
+                <img src="img/microsoft-power-up-program-low-code-maker-course-co (1).png"><br><br><br><br><br>
+                <h3>Microsoft Power Up Program - Low-code Maker Course</h3>
+                <p>Completion of Microsoft Power Up Program - Low-code Maker Course</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:youremail@example.com">youremail@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="#" target="_blank">LinkedIn Profile</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="#" target="_blank">GitHub Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2025 - Peheni Perera</p>
+    </footer>
+</body>
+</html>
